@@ -19,14 +19,17 @@
 
         
         <form action="index.php" method="post">
-            <input type="text" name="name" id="name" placeholder="Enter your name">
-            <input type="text" name="age" id="age" placeholder="Enter your Age">
-            <input type="text" name="gender" id="gender" placeholder="Enter your gender">
-            <input type="email" name="email" id="email" placeholder="Enter your valid Email id">
-            <input type="phone" name="phone" id="phone" placeholder="Enter your phone">
+            <input type="text" name="name" id="name" placeholder="Enter your name" required>
+            <input type="text" name="age" id="age" placeholder="Enter your Age" required>
+            <input type="text" name="gender" id="gender" placeholder="Enter your gender" required>
+            <input type="email" name="email" id="email" placeholder="Enter your valid Email id" required>
+            <input type="phone" name="phone" id="phone" placeholder="Enter your phone" required>
             <textarea name="desc" id="desc" cols="30" rows="10" placeholder="Enter anything else you want to add"></textarea>
-            <button class="btn">Submit</button>
-            <button class="btn">Reset</button>
+            <div id="submit"> 
+                <button class="btn1">Submit</button>
+                <button class="btn2">Reset</button>
+            </div>
+   
 
         </form>
         
@@ -36,4 +39,3 @@
 </body>
 </html>
     
-

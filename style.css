@@ -5,34 +5,45 @@
     
 font-family: 'Roboto', sans-serif;
 }
-
+body{
+display: flex;
+justify-content: center;
+background-image: url('https://images.pexels.com/photos/1130683/pexels-photo-1130683.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=900');
+background-repeat: no-repeat;
+background-size: cover;
+}
 .container{
     max-width: 80%; 
-    padding: 34px; 
-    margin: auto;
+    height: auto;
+    padding: 24px; 
+   margin-top: 24px;
+    background-color: rgba(0, 0, 0, 0.795);
 }
 
 .container h1 {
+    color:#ffff;
+    font-weight: 100;
     text-align: center;
     font-family: 'Sriracha', cursive;
-    font-size: 40px;
+    font-size: 33px;
 }
 
 p{
-    font-size: 17px;
+    font-size: 15px;
+    color: #ffff;
     text-align: center;
     font-family: 'Sriracha', cursive;
 }
 
 input, textarea{
     
-    border: 2px solid black;
-    border-radius: 6px;
+    border: 1px solid white;
+    border-radius: 2px;
     outline: none;
     font-size: 16px;
-    width: 80%;
+    width: 70%;
     margin: 11px 0px;
-    padding: 7px;
+    padding: 12px;
 }
 form{
     display: flex;
@@ -41,16 +52,25 @@ form{
     flex-direction: column;
 }
 
-.btn{
+.btn1{
     color: white;
-    background: purple;
+    margin-right: 10px;
+    background: green;
     padding: 8px 12px;
-    font-size: 20px;
-    border: 2px solid white;
-    border-radius: 14px;
+    font-size: 18px;
+    border: 1px solid green;
+    
     cursor: pointer;
 }
 
+.btn2{
+    color: white;
+    background: grey;
+    padding: 8px 12px;
+    font-size: 18px;
+    border: 2px solid grey;
+    cursor: pointer;
+}
 .bg{
     width: 100%;
     position: absolute;
