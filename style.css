@@ -2,37 +2,43 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    
+
 font-family: 'Roboto', sans-serif;
 }
+body{background-color: #1A1A1D;}
 
 .container{
-    max-width: 80%; 
-    padding: 34px; 
+    max-width: 80%;
+    padding: 34px;
     margin: auto;
 }
 
 .container h1 {
     text-align: center;
-    font-family: 'Sriracha', cursive;
+    font-family: 'Aleo', cursive;
     font-size: 40px;
+    color:#950740;
+    text-shadow:2px 2px black;
 }
 
 p{
-    font-size: 17px;
+    font-size: 25px;
     text-align: center;
-    font-family: 'Sriracha', cursive;
+    font-family: 'Aleo', cursive;
+    color:#802BB1;
+    text-shadow:2px 2px black;
 }
 
 input, textarea{
-    
-    border: 2px solid black;
+
+    border: 2px solid #D6CE15;
     border-radius: 6px;
     outline: none;
     font-size: 16px;
     width: 80%;
     margin: 11px 0px;
     padding: 7px;
+
 }
 form{
     display: flex;
@@ -49,7 +55,10 @@ form{
     border: 2px solid white;
     border-radius: 14px;
     cursor: pointer;
+
+
 }
+.orm{background:#D6CE15; }
 
 .bg{
     width: 100%;
@@ -57,6 +66,6 @@ form{
     z-index: -1;
     opacity: 0.6;
 }
-.submitMsg{ 
+.submitMsg{
     color: green;
 }
