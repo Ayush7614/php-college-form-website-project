@@ -2,6 +2,20 @@
 
 ![php-college-form-website-project](https://socialify.git.ci/Ayush7614/php-college-form-website-project/image?forks=1&issues=1&language=1&owner=1&pattern=Brick%20Wall&pulls=1&stargazers=1&theme=Dark)
 
+## Owner
+
+* [Ayush Kumar👨‍💻](https://github.com/Ayush7614)
+* [Live Preview]()
+
+## web stack
+- HTML
+- CSS
+- JS
+- PHP
+- PHPMYADMIN
+
+
+
 
 ## ❤️ Project Admin
 
