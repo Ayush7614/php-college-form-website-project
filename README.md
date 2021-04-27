@@ -96,4 +96,26 @@ git push -u origin <your_branch_name>
 |                                                                                      **[Ayush Kumar](https://www.linkedin.com/in/ayush-kumar-%F0%9F%87%AE%F0%9F%87%B3-984443191/)**                                                                                    |
 
 
+Thanks goes to these **Wonderful People** 👨🏻‍💻:       
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+<table>
+ <tr>
+<td align="center"><a href="https://github.com/smv1999"><img src="https://avatars.githubusercontent.com/u/42896577?s=400&u=9530610016fa2171d559af8bcdb3e9178bb7d308&v=4" width="100px;" alt=""/><br /><sub><b>smv1999</b></sub></a><br /><a href="https://github.com/smv1999/CompetitiveProgrammingQuestionBank/commits?author=smv1999" title="Code">💻</a></td>
+<td align="center"><a href="https://github.com/TawfikYasser"><img src="https://avatars.githubusercontent.com/u/54971231?s=400&u=0666d4ced1599a86cdb8d5bb817080ab2cbe22a0&v=4" width="100px;" alt=""/><br /><sub><b>TawfikYasser</b></sub></a><br /><a href="https://github.com/TawfikYasser/CompetitiveProgrammingQuestionBank/commits?author=" title="Code">💻</a></td>
+<td align="center"><a href="https://github.com/Ayush7614"><img src="https://avatars.githubusercontent.com/u/67006255?s=400&u=c0e16c3bba31328a028cfcca4b1fa7599509f905&v=4" width="100px;" alt=""/><br /><sub><b>Ayush7614</b></sub></a><br /><a href="https://github.com/Ayush7614/CompetitiveProgrammingQuestionBank/commits?author=" title="Code">💻</a></td>
+  </tr>
+</table>
+
+🚀 **Contributions** of any kind is welcome!
+
+
+## Stargazers Over Time
+
+[![Stargazers over time](https://starchart.cc/Ayush7614/php-college-form-website-project.svg)](https://starchart.cc/Ayush7614/php-college-form-website-project)
+
+## LICENSE
+This project follows the [MIT License](https://github.com/Ayush7614/php-college-form-website-project/blob/master/LICENSE).
 
