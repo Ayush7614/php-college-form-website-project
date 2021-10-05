@@ -8,7 +8,9 @@
         <link href="https://fonts.googleapis.com/css?family=Roboto|Sriracha&display=swap" rel="stylesheet">
         <link href='https://fonts.googleapis.com/css?family=Aleo' rel='stylesheet'>
     <link rel="stylesheet" href="style.css">
-
+    <script src = "https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity = "sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+            crossorigin = "anonymous"></script>
 </head>
 <body>
         <img class="bg" src="bg.jpg" alt="ABES ENGINEERING COLLEGE">
@@ -18,21 +20,53 @@
         <p>Enter your details and submit this form to confirm your participation in the trip </p>
         <p class='submitMsg'>Thanks for submitting your form. We are happy to see you joining us for the Mussorie trip</p>
 
+        <div id = "alert"></div>
 
-        <form action="index.php" method="post">
-            <input class="form" type="text" name="name" id="name" placeholder="Enter your name">
-            <input class="form" type="text" name="age" id="age" placeholder="Enter your Age">
-            <input class="form" type="text" name="gender" id="gender" placeholder="Enter your gender">
-            <input class="form" type="email" name="email" id="email" placeholder="Enter your valid Email id">
-            <input class="form" type="phone" name="phone" id="phone" placeholder="Enter your phone">
+        <form id = "booking-form" onsubmit = "doBook(event);">
+            <input class="form" type="text" name="name" id="name" placeholder="Enter your name" required>
+            <input class="form" type="number" name="age" id="age" placeholder="Enter your Age" required>
+            <input class="form" type="text" name="gender" id="gender" placeholder="Enter your gender(MALE/FEMALE)" required>
+            <input class="form" type="email" name="email" id="email" placeholder="Enter your valid Email id" required>
+            <input class="form" type="phone" name="phone" id="phone" placeholder="Enter your phone" required>
             <textarea name="desc" id="desc" cols="30" rows="10" placeholder="Enter anything else you want to add"></textarea>
             <button class="btn">Submit</button>
             <button class="btn">Reset</button>
-
         </form>
 
 
     </div>
     <script src="index.js"></script>
+    <script type = "text/javascript">
+       var reference = document.getElementById("alert");
+       var form = document.getElementById("booking-form");
+       
+       function doTransfer(event) {
+            event.preventDefault();
+
+            if(form["name"].value.length < 5) {
+                error = "<span>Name must be at least five characters long!</span>";
+                reference.innerHTML = error;
+            } else if(form["name"].value.length > 30) {
+                error = "<span>Name too long, must be at most thirty characters long!</span>";
+                reference.innerHTML = error;
+            } else if(form["age"].value > 10 && form["age"].value < 50) {
+                error = "<span>Age must be a number in between ten to fifty!</span>";
+                reference.innerHTML = error;
+            } else if(form["gender"].value != "MALE" && form["gender"].value != "FEMALE") {
+                error = "<span>Gender must be in acceptabe format(MALE/FEMALE)!</span>";
+                reference.innerHTML = error;
+            } else if(form["phone"].value.length != 10) {
+                error = "<span>Phone number must be valid!</span>";
+                reference.innerHTML = error;               
+            } else {
+                $.ajax({
+                    type: "POST",
+                    url: "index.php",
+                    data: "name=" + form["name"].value + "&gender=" + form["gender"].value + "&age=" + form["age"].value + "&email=" + form["email"].value + "&phone=" + form["phone"].value + "&desc=" + form["desc"].value,
+                    success: function() {}
+                });
+            }
+        }
+    </script>
 </body>
 </html>
